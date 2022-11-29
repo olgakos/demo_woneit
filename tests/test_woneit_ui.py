@@ -1,15 +1,17 @@
 import allure
 import pytest
 from allure_commons.types import Severity
-from selene import by, command
-from selene.support.conditions import have, be
+
+from selene.support import by
+from selene.support.conditions import be
 from selene.support.shared import browser
+from selene.support.shared.jquery_style import s
 
 from models.common_elements import wait_short, go_to_page
 from models.page_company import *
 from models.page_projects import *
 
-
+#@pytest.fixture(scope="session") #.env
 @pytest.fixture(scope='function')
 def setup_browser():
     browser.config.timeout = 3
@@ -33,6 +35,7 @@ def test_find_basic_contacts2022(setup_browser):
     with allure.step("Open Company Page"):
         go_to_page("/company/index.php")
     with allure.step("Check actual contacts"):
+        from selene.support.conditions import have
         s(".footer-phone").should(have.text("+7(499)322-05-45"))
         s(".footer-mail").should(have.text("info.ru@wone-it.ru"))
     with allure.step("Check actual year"):
