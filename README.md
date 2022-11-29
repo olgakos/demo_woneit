@@ -15,3 +15,4 @@
 ------------
 version 01 - add 5 easy tests
 <br>version 02 - add Page Object Pattern
+<br>version 03 - add local Allure

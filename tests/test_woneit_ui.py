@@ -14,7 +14,7 @@ from models.page_projects import *
 def setup_browser():
     browser.config.timeout = 3
     browser.config.browser_name = 'chrome'
-    browser.config.base_url = 'https://wone-it.ru'
+    #browser.config.base_url = 'https://wone-it.ru'
     browser.config.window_width = 1280
     browser.config.window_height = 1024
     yield
@@ -38,6 +38,7 @@ def test_find_basic_contacts2022(setup_browser):
     with allure.step("Check actual year"):
         s(".footer-description").should(have.text("© 2022 Группа компаний WONE IT"))
 
+
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
 @allure.label("olgakos")
@@ -54,7 +55,8 @@ def test_fill_form(setup_browser):
         checkbox_politics.click()
     with allure.step("Submit"):
         #send_button.click() #ПРОПУСК!
-        wait_short() #для удобства визуального просмотра
+        wait_short() #для удобства визуального контроля
+
 
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
@@ -63,7 +65,7 @@ def test_fill_form(setup_browser):
 @allure.feature("Feature: Allure with decorating")
 @allure.story("Decorator")
 @allure.link("https://wone-it.ru")
-def test_some_project(setup_browser):
+def test_find_some_project(setup_browser):
     with allure.step("Open Projects Page"):
         go_to_page("/projects/")
     with allure.step("Menu"):
@@ -74,6 +76,4 @@ def test_some_project(setup_browser):
     with allure.step("Check"):
         s(by.partial_text("AquaHelp")).should(be.visible)
         s('#bx_3218110189_2070').should(have.text('снижает нагрузку на сотрудников'))
-        wait_short() #для удобства визуального просмотра
-
-
+        wait_short() #для удобства визуального контроля

@@ -1,3 +1,6 @@
+import requests
+from pytest_voluptuous import S
+#from schemas import schemas
 from utils.base_session import reqres_session
 
 def test_get_good_requiest():
