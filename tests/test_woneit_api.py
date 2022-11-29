@@ -11,7 +11,6 @@ def test_get_bad_request():
     response = reqres_session().get(url='/1217/')
     assert response.status_code == 404
 
-
 '''
 import allure
 from allure_commons.types import Severity
