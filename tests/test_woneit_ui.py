@@ -3,7 +3,7 @@ import pytest
 from allure_commons.types import Severity
 
 from selene.support import by
-from selene.support.conditions import be
+from selene.support.conditions import be, have
 from selene.support.shared import browser
 from selene.support.shared.jquery_style import s
 
@@ -58,7 +58,7 @@ def test_fill_form(setup_browser):
         checkbox_politics.click()
     with allure.step("Submit"):
         #send_button.click() #ПРОПУСК!
-        wait_short() #для удобства визуального контроля
+        wait_short() #Временно. для удобства визуального контроля
 
 
 @allure.tag("web")
@@ -79,4 +79,4 @@ def test_find_some_project(setup_browser):
     with allure.step("Check"):
         s(by.partial_text("AquaHelp")).should(be.visible)
         s('#bx_3218110189_2070').should(have.text('снижает нагрузку на сотрудников'))
-        wait_short() #для удобства визуального контроля
+        wait_short() #Временно. для удобства визуального контроля

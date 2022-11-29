@@ -1,6 +1,9 @@
 import requests
+import allure
+from allure_commons.types import Severity
 from pytest_voluptuous import S
 #from schemas import schemas
+
 from utils.base_session import reqres_session
 
 def test_get_good_requiest():
@@ -12,12 +15,6 @@ def test_get_bad_request():
     assert response.status_code == 404
 
 '''
-import allure
-from allure_commons.types import Severity
-
-from utils.base_session import reqres_session
-
-
 @allure.tag("api")
 @allure.severity(Severity.NORMAL)
 @allure.label("olgakos")
