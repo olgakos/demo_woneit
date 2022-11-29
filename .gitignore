@@ -4,6 +4,11 @@ allure-report/
 .allure-results/
 .allure-report/
 .tests/allure-results
+allure/plugins
+/allure/
+
+.idea
+.idea/workspace.xml.
 
 # JIRA plugin
 atlassian-ide-plugin.xml
