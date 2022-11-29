@@ -1,20 +1,13 @@
 import requests
 import allure
 from allure_commons.types import Severity
+
 from pytest_voluptuous import S
 #from schemas import schemas
 
 from utils.base_session import reqres_session
 
-def test_get_good_requiest():
-    response = reqres_session().get(url='/company/')
-    assert response.status_code == 200
 
-def test_get_bad_request():
-    response = reqres_session().get(url='/1217/')
-    assert response.status_code == 404
-
-'''
 @allure.tag("api")
 @allure.severity(Severity.NORMAL)
 @allure.label("olgakos")
@@ -41,4 +34,13 @@ def test_get_bad_request():
         response = reqres_session().get(url='/1217/')
     with allure.step("Verify the expected response"):
         assert response.status_code == 404
+
+'''
+def test_get_good_requiest():
+    response = reqres_session().get(url='/company/')
+    assert response.status_code == 200
+
+def test_get_bad_request():
+    response = reqres_session().get(url='/1217/')
+    assert response.status_code == 404
 '''

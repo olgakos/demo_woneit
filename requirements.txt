@@ -1,5 +1,5 @@
 pytest==7.1.2
-selene==2.0.b14
+selene==2.0.b16
 allure-pytest==2.9.45
 python-dotenv==0.20.0
 
