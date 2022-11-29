@@ -14,7 +14,7 @@ from models.page_projects import *
 def setup_browser():
     browser.config.timeout = 3
     browser.config.browser_name = 'chrome'
-    #browser.config.base_url = 'https://wone-it.ru'
+    browser.config.base_url = 'https://wone-it.ru' #?
     browser.config.window_width = 1280
     browser.config.window_height = 1024
     yield
