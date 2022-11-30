@@ -53,7 +53,6 @@ def setup_browser(request):
     )
     #browser = Browser(Config(driver)) #это ЛОКАЛЬНЫЙ запуск драйвера Хром
     browser.config.driver = driver #это УДАЛЕННЫЙ запуск драйвера Хром
-
     yield browser
 
     attach.add_html(browser)
