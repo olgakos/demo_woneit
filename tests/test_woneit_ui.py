@@ -10,7 +10,7 @@ from selene.support.shared.jquery_style import s
 from models.common_elements import wait_short, go_to_page
 from models.page_company import *
 from models.page_projects import *
-
+'''
 #@pytest.fixture(scope="session") #.env
 @pytest.fixture(scope='function')
 def setup_browser():
@@ -20,6 +20,10 @@ def setup_browser():
     browser.config.window_width = 1280
     browser.config.window_height = 1024
     yield
+#запускается в Дж., но
+#selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+сообщение в Аллюре при старте из Дж. UI тесты не пройдут
+'''
 
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
