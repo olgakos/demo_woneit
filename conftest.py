@@ -51,8 +51,8 @@ def setup_browser(request):
         command_executor=f"https://user1:1234@selenoid.autotests.cloud/wd/hub", #see file .env
         options=options
     )
-    browser = Browser(Config(driver)) #это ЛОКАЛЬНЫЙ запуск драйвера Хром
-    #browser.config.driver = driver #это УДАЛЕННЫЙ запуск драйвера Хром
+    #browser = Browser(Config(driver)) #это ЛОКАЛЬНЫЙ запуск драйвера Хром
+    browser.config.driver = driver #это УДАЛЕННЫЙ запуск драйвера Хром
 
     yield browser
 
