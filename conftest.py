@@ -47,8 +47,8 @@ def setup_browser(request):
     password = os.getenv('PASSWORD')
 
     driver = webdriver.Remote(
-        #command_executor=f"https://{login}:{password}@selenoid.autotests.cloud/wd/hub", #see params here
-        command_executor=f"https://user1:1234@selenoid.autotests.cloud/wd/hub", #see file .env
+        command_executor=f"https://{login}:{password}@selenoid.autotests.cloud/wd/hub", #see params here
+        #command_executor=f"https://user1:1234@selenoid.autotests.cloud/wd/hub", #see file .env
         options=options
     )
     #browser = Browser(Config(driver)) #это ЛОКАЛЬНЫЙ запуск драйвера Хром
