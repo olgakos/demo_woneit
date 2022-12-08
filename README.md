@@ -16,7 +16,7 @@
 <br>version 01 - add 5 easy tests
 <br>version 02 - add Page Object Pattern
 <br>version 03 - add local Allure. Some fix.
-<br>version 04 - NB! Add branch `jenkins_add` (added Jenkins, remote Allure, Telegramm notifications and full Readme)
+<br>version 04 - <b>NB!</b> Add <a target="_blank" href="https://github.com/olgakos/demo_woneit/tree/jenkins_add">branch</a> `jenkins_add` (added Jenkins, remote Allure, Telegramm notifications and full Readme)
 
 -------
 2022-12-08
