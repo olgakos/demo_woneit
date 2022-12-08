@@ -4,6 +4,8 @@
 
 ## Демо-проект по автоматизации тестирования: WONE IT
 :earth_americas: https://wone-it.ru/
+<br>К тестам прилагается графический визуальный отчет, возможность независимого запуска с любого компьютера, а так же уведомления в Telegram-группу.
+
 
 ## :watermelon: Реализованы следующие проверки:
 :white_check_mark: API Статус-код страницы = 200    
@@ -11,6 +13,7 @@
 :white_check_mark: UI Проверить актуальность контактов    
 :white_check_mark: UI Заполнить регистрационную форму данными    
 :white_check_mark: UI Поиск через меню с выпадающим списком
+
 
 ## :watermelon: Локальный запуск моих тестов (из терминала):
 1. Скачать проект.
@@ -108,11 +111,13 @@ $ scoop install allure
 <p align="center">
 <img title="Telegram Bot" src="images/screens/ScreenshotTelegram.jpg" alt="Telegram Bot">
 </p>
------------------------------------------
+
+-------
 <br>version 01 - add 5 easy tests
 <br>version 02 - add Page Object Pattern
 <br>version 03 - add local Allure. Some fix.
-<br>version 04 - branch `jenkins_add`. Add Jenkins with remote Allure. New Readme
-<br>version 05 - branch `jenkins_add`. Add Telegramm notifications to launch from Jenkins. New Readme
-----------------------------------------
-<br>2022-12-08
+<br>version 04 - branch `jenkins_add`. Add Jenkins with remote Allure. New Readme.
+<br>version 05 - branch `jenkins_add`. Add Telegramm notifications to launch from Jenkins. New Readme.
+
+-------
+2022-12-08
