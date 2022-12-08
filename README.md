@@ -33,7 +33,7 @@ $ pytest .
 
 Способ 1. Быстрый вариант, только просмотр:
 1. <i>Не зарегистрированным</i> пользователем перейти на страницу сборки проекта по ссылке: 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/C02_OlgaKos_python_demo_woneit/" target="_blank">our Jenkins project</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/C02_OlgaKos_python_demo_woneit/">Jenkins project</a>
 2. Слева внизу кликнуть на желтую иконку "Allure Report" и ознакомиться в графическим отчетом о результатах последнего запуска тестов.  
 <p align="center">
 <img title="Allure Graphics" src="images/screens/ScreenshotJ.jpg" alt="Allure Button" width="600">
@@ -41,7 +41,7 @@ $ pytest .
 
 Способ 2. Запустить тесты самостоятельно: 
 1. <i>Зарегистрированным</i> пользователем перейти на страницу сборки проекта по ссылке: 
-   <a target="_blank" href="https://jenkins.autotests.cloud/job/C02_OlgaKos_python_demo_woneit/" target="_blank">our Jenkins project</a>
+   <a target="_blank" href="https://jenkins.autotests.cloud/job/C02_OlgaKos_python_demo_woneit/">Jenkins project</a>
 3. Перечисленные (ниже) параметры можно менять в графическом интерфейсе перед запуском тестов.
 4. Запустить выполнение тестов кнопкой "Собрать" (внизу страницы)
 5. Дождаться окончания прогона (~2 минуты)
@@ -70,6 +70,7 @@ test
 - `BUILD_URL` - автоматическая ссылка на детализированный отчет о сборке
 
 ## :bellhop_bell: Allure отчет
+<p>Наглядный графический отчет о результатах прогона тествого набора.</p>
 <br>Способ 1: 
 <br>Запросить отчет средствами среды разработки PyCharm. (*) В большинстве случаем может потребоваться углубленная настройка локального проекта.
 ```
