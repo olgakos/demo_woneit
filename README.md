@@ -86,18 +86,18 @@ $ allure serve ...........allure-results
 
 ###### Главный экран отчета (Owerwiev)
 <p align="center">
-<img title="Allure Graphics" src="images/screens/ScreenshotAllure1.jpg" alt="Allure Graphics">
+<img title="Allure Graphics" src="images/screens/ScreenshotAllure1.jpg" alt="Allure Graphics" width="600">
 </p>
 
 ###### Страница с проведенными тестами (Suites)
 <p align="center">
-<img title="Allure Graphics" src="images/screens/ScreenshotAllure2.jpg" alt="Allure Graphics">
+<img title="Allure Graphics" src="images/screens/ScreenshotAllure2.jpg" alt="Allure Graphics" width="600">
 </p>
 
 ## :watermelon: Видео прохождения тестов
 К каждому тесту (в отчете) прилагается автоматически сгенерированное Selenoid видео. Пример:
 <p align="center">
-  <img title="Selenoid Video" src="images/screens/VideoExampleWoneIt2.gif" alt="Video">
+  <img title="Selenoid Video" src="images/screens/VideoExampleWoneIt2.gif" alt="Video" width="600">
 </p>
 
 ## :bellhop_bell: Отчет в Telegram (IN WORK)
