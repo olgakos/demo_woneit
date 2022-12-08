@@ -9,10 +9,14 @@
 :white_check_mark: API Статус-код страницы = 200    
 :white_check_mark: API Статус-код страницы = 404    
 :white_check_mark: UI Проверить актуальность контаков    
-:white_check_mark: UI Заполнить форму данными    
+:white_check_mark: UI Заполнить регистрационную форму данными    
 :white_check_mark: UI Поиск через меню с выпадающим списком
 
 ------------
-version 01 - add 5 easy tests
+<br>version 01 - add 5 easy tests
 <br>version 02 - add Page Object Pattern
 <br>version 03 - add local Allure. Some fix.
+<br>version 04 - NB! Add branch `jenkins_add` (added Jenkins, remote Allure, Telegramm notifications and full Readme)
+
+-------
+2022-12-08
