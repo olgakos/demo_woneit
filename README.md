@@ -97,7 +97,7 @@ $ allure serve ...........allure-results
 ## :watermelon: Видео прохождения тестов
 К каждому тесту (в отчете) прилагается автоматически сгенерированное Selenoid видео. Пример:
 <p align="center">
-  <img title="Selenoid Video" src="images/screens/VideoExample.gif" alt="Video">
+  <img title="Selenoid Video" src="images/screens/VideoExampleWoneIt2.gif" alt="Video">
 </p>
 
 ## :bellhop_bell: Отчет в Telegram (IN WORK)
