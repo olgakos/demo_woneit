@@ -26,9 +26,11 @@ def load_env():
 #фикстура удаленного запуска:
 @pytest.fixture(scope='function')
 def setup_browser(request):
+    browser.config.timeout = 3 #? from test
+    browser.config.base_url = 'https://wone-it.ru' #? from test
     browser.config.window_width = 1280  # NB!
     browser.config.window_height = 1400
-    #browser.config.base_url = 'https://wone-it.ru'
+    #browser.config.browser_name = 'chrome'
     browser_version = request.config.getoption('--browser_version')
     browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
     options = Options()

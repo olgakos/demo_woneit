@@ -10,16 +10,20 @@ from selene.support.shared.jquery_style import s
 from models.common_elements import wait_short, go_to_page
 from models.page_company import *
 from models.page_projects import *
-
+'''
 #@pytest.fixture(scope="session") #.env
 @pytest.fixture(scope='function')
 def setup_browser():
     browser.config.timeout = 3
     browser.config.browser_name = 'chrome'
-    browser.config.base_url = 'https://wone-it.ru' #?
+    browser.config.base_url = 'https://wone-it.ru' #!!
     browser.config.window_width = 1280
     browser.config.window_height = 1024
     yield
+#Важно! Если не убрать это из тестов в конфтест, то: стартанет в Дж., Аллюре не соберет UI тесты,
+ошибка: 
+#selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+'''
 
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
