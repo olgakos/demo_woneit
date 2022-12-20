@@ -118,10 +118,13 @@ $ scoop install allure
 </p>
 
 -------
+
 <br>version 01 - add 5 easy tests
 <br>version 02 - add Page Object Pattern
 <br>version 03 - add local Allure. Some fix.
 <br>version 04 - branch `jenkins_add`. Add Jenkins with remote Allure. New Readme.
 <br>version 05 - branch `jenkins_add`. Add Telegramm notifications to launch from Jenkins. New Readme.
+
 -------
 2022-12-20
+1
