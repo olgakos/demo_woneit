@@ -33,7 +33,7 @@ $ pytest .
 
 Способ 1. Быстрый вариант, только просмотр:
 1. <i>Не зарегистрированным</i> пользователем перейти на страницу сборки проекта по ссылке: 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/C02_OlgaKos_python_demo_woneit/">Jenkins project</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/Students/job/C02_OlgaKos_python_demo_woneit/">Jenkins project</a>
 2. Слева внизу кликнуть на желтую иконку "Allure Report" и ознакомиться в графическим отчетом о результатах последнего запуска тестов.  
 <p align="center">
 <img title="Allure Graphics" src="images/screens/ScreenshotJ.jpg" alt="Allure Button" width="600">
@@ -127,5 +127,8 @@ $ scoop install allure
 <br>version 06 - branch `jenkins_add` >>> main
 
 -------
-2022-12-20
-2
+<br>2022-12-20
+<br>2023-08-04 upd Jenkins link
+
+##### todo
+Обновить 2 UI
