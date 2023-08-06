@@ -37,6 +37,7 @@ def setup_browser(request):
             "enableVideo": True
         }
     }
+
     options.capabilities.update(selenoid_capabilities)
 
     login = os.getenv('LOGIN')

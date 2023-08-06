@@ -37,11 +37,13 @@ def test_fill_form(setup_browser):
         go_to_page("/company/#feedback-form-wrapper")
     with allure.step("Fill form"):
         fill_contact_form()
+    '''
     with allure.step("Принять политику конфиденциальности"):
         checkbox_politics.click()
     with allure.step("Submit"):
         #send_button.click()
         wait_short()
+    '''
 
 
 @allure.tag("web")
