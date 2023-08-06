@@ -120,4 +120,4 @@ allure\bin\allure.bat serve allure-results
 -------
 2022-12-20 branch `jenkins_add` >>> main
 <br>2023-08-04 upd Jenkins link
-<br>2023-08-07 fix 2 UI tests
+<br>2023-08-06 fix 2 UI tests
