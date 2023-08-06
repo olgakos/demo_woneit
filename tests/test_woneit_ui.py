@@ -1,33 +1,15 @@
 import allure
-import pytest
 from allure_commons.types import Severity
-
-from selene import have, by
+from selene import have, by, command
 from selene.support.conditions import be
-from selene.support.shared import browser
-from selene.support.shared.jquery_style import s
 
 from models.common_elements import wait_short, go_to_page
 from models.page_company import *
 from models.page_projects import *
-'''
-#@pytest.fixture(scope="session") #.env
-@pytest.fixture(scope='function')
-def setup_browser():
-    browser.config.timeout = 3
-    browser.config.browser_name = 'chrome'
-    browser.config.base_url = 'https://wone-it.ru' #!!
-    browser.config.window_width = 1280
-    browser.config.window_height = 1024
-    yield
-#Важно! Если не убрать это из тестов в конфтест, то: стартанет в Дж., Аллюре не соберет UI тесты,
-ошибка: 
-#selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
-'''
 
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
-@allure.label("olgakos")
+@allure.label('owner', 'Olga Kos')
 @allure.description("Description: Contacts is actual (2023)")
 @allure.feature("Feature: Allure with decorating")
 @allure.story("Decorator")
@@ -45,7 +27,7 @@ def test_find_basic_contacts2022(setup_browser):
 
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
-@allure.label("olgakos")
+@allure.label('owner', 'Olga Kos')
 @allure.description("Description: Fill form")
 @allure.feature("Feature: Allure with decorating")
 @allure.story("Decorator")
@@ -64,7 +46,7 @@ def test_fill_form(setup_browser):
 
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
-@allure.label("olgakos")
+@allure.label('owner', 'Olga Kos')
 @allure.description("Description: Search in menu")
 @allure.feature("Feature: Allure with decorating")
 @allure.story("Decorator")
