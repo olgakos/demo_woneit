@@ -118,14 +118,6 @@ allure\bin\allure.bat serve allure-results
 </p>
 
 -------
-Note:
-<br>2022-12-20
-<br>version 01 - add 5 easy tests
-<br>version 02 - add Page Object Pattern
-<br>version 03 - add local Allure. Some fix.
-<br>version 04 - branch `jenkins_add`. Add Jenkins with remote Allure. New Readme.
-<br>version 05 - branch `jenkins_add`. Add Telegramm notifications to launch from Jenkins. New Readme.
-<br>version 06 - branch `jenkins_add` >>> main
-
+2022-12-20 branch `jenkins_add` >>> main
 <br>2023-08-04 upd Jenkins link
-<br>2023-08-07  fix 2 UI tests
+<br>2023-08-07 fix 2 UI tests
