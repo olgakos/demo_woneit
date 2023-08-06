@@ -1,3 +1,5 @@
+docs/
+
 # Allure to my!
 allure-results/
 allure-report/
@@ -8,11 +10,20 @@ allure/plugins
 /allure/
 
 .idea
+/.idea
 .idea/workspace.xml.
 
 # JIRA plugin
 atlassian-ide-plugin.xml
 
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Installer logs
 pip-log.txt
@@ -126,14 +137,6 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
 
 # Spyder project settings
 .spyderproject

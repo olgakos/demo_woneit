@@ -28,7 +28,7 @@ def setup_browser():
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
 @allure.label("olgakos")
-@allure.description("Description: Contacts is actual (2022)")
+@allure.description("Description: Contacts is actual (2023)")
 @allure.feature("Feature: Allure with decorating")
 @allure.story("Decorator")
 @allure.link("https://wone-it.ru")
@@ -40,7 +40,7 @@ def test_find_basic_contacts2022(setup_browser):
         s(".footer-phone").should(have.text("+7(499)322-05-45"))
         s(".footer-mail").should(have.text("info.ru@wone-it.ru"))
     with allure.step("Check actual year"):
-        s(".footer-description").should(have.text("© 2022 Группа компаний WONE IT"))
+        s(".footer-description").should(have.text("© 2023 Группа компаний WONE IT"))
 
 
 @allure.tag("web")
@@ -58,8 +58,8 @@ def test_fill_form(setup_browser):
     with allure.step("Принять политику конфиденциальности"):
         checkbox_politics.click()
     with allure.step("Submit"):
-        #send_button.click() #ПРОПУСК!
-        wait_short() #Временно. для удобства визуального контроля
+        #send_button.click()
+        wait_short()
 
 
 @allure.tag("web")
@@ -80,4 +80,4 @@ def test_find_some_project(setup_browser):
     with allure.step("Check"):
         s(by.partial_text("AquaHelp")).should(be.visible)
         s('#bx_3218110189_2070').should(have.text('снижает нагрузку на сотрудников'))
-        wait_short() #Временно. для удобства визуального контроля
+        wait_short()
